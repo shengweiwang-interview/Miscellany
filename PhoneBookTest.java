@@ -26,13 +26,14 @@ class Entry
     return number ;
   }
    
+  //overrides equals from Object class so it must have the same signature
   @Override
   public boolean equals( Object other )
   {
    
     System.out.print  ("    Compare " + other + " To " + this );
     System.out.println(" Result: " +  name.equals( ((Entry)other).name ) );
-    return getName().equals( ((Entry)other).getName() );
+    return this.getName().equals( ((Entry)other).getName() );
   }
 
   @Override
@@ -50,7 +51,7 @@ public class PhoneBookTest
     ArrayList<Entry> phone = new ArrayList<Entry>();
 
     phone.add( new Entry( "Amy", "123-4567") );
-    phone.add( null ); // this position is not ok to have a null
+    phone.add( null ); // this position is not ok to have a null if perform the search
     phone.add( new Entry( "Bob", "123-6780") );
     phone.add( new Entry( "Hal", "789-1234") );
     phone.add( new Entry( "Deb", "789-4457") );
@@ -70,16 +71,6 @@ public class PhoneBookTest
     System.out.println("End Search" );
 
     System.out.println( "indexOf returns: " + spot ) ;
-  
-    //List<String> shengweiwang = new ArrayList<String>();
-   // shengweiwang.wait();
-   // shengweiwang.notifyAll();
-    
-    //List myList = new ArrayList();
-   // Collection myList_2 = new ArrayList();
-  //  ReentrantReadWriteLock myLock = new ReentrantReadWriteLock();
-    
-    
     
   }
 }

@@ -1,10 +1,10 @@
 package jc;
 
-public class ClassLevelThree implements LevelTwo {
+public class ClassLevelThree implements InterfaceLevelTwo {
 
 	
 	@Override
-	public void methodLevelOne() {
+	public void methodInterfaceLevelOne() {
 		// TODO Auto-generated method stub
 		
 	}

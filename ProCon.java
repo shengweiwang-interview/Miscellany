@@ -3,7 +3,7 @@ package jc;
 import java.util.*;
 
 public class ProCon {
-	/*
+	
 	static List<String> myListOne = new ArrayList<String>(); // a class object to store the strings
 	
 	public void produce(){
@@ -39,24 +39,12 @@ public class ProCon {
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
-		}myProConTwo.produce();}});
+		} myProConTwo.produce();}});
 		t.start();
 		ProCon myProCon = new ProCon();
-	    System.out.println(myProCon.myListOne.size());
+	    System.out.println("current myListOne size:"+ myProCon.myListOne.size());
 		myProCon.consume();
-		
 	
-	   
-        
-        
-
-		
-	
-		
-		
 	}
 	
-	
-	
-*/
 }

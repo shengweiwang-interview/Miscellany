@@ -2,10 +2,12 @@ package jc;
 import java.util.*;
 
 public class NewThreadOne extends Thread {
+	
 	LinkedList myLinkedList = new LinkedList();
 	
-	//Optional: a constructor
+	//Optional: a constructor which contains this.start() 
 	
+	//Must override run(): inside run() can put a flag which can stop the thread
 	@Override
 	public void run(){
 	
